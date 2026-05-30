@@ -115,6 +115,7 @@ def approve_leave(request_id: int) -> Dict:
             return {
                 "message": "Leave has been approved successfully",
                 "updated_balance": employees[employee_id]["leave_balance"],
+                "leave_history": employees[employee_id]["leave_history"],
                 "request": request
             }
 
